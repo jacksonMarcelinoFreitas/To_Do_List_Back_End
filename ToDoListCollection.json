@@ -1,0 +1,271 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "My Project",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "tags": [
+    {
+      "name": "To do List"
+    }
+  ],
+  "paths": {
+    "/users/": {
+      "post": {
+        "summary": "CREATE USER",
+        "x-apidog-folder": "To do List",
+        "x-apidog-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "To do List"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "faker": "Jackson"
+                  },
+                  "username": {
+                    "type": "string",
+                    "faker": "jacksonFreitas"
+                  },
+                  "password": {
+                    "type": "string",
+                    "faker": "jakckson123"
+                  }
+                },
+                "x-apidog-orders": [
+                  "name",
+                  "username",
+                  "password"
+                ],
+                "required": [
+                  "name",
+                  "username",
+                  "password"
+                ],
+                "x-apidog-ignore-properties": []
+              },
+              "example": {
+                "name": "Jackson M. de Freitas",
+                "username": "jackson",
+                "password": "jackson123"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apidog-ignore-properties": [],
+                  "x-apidog-orders": []
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apidog": "https://apidog.com/web/project/394370/apis/api-4390137-run"
+      }
+    },
+    "/tasks/": {
+      "post": {
+        "summary": "CREATE TASK",
+        "x-apidog-folder": "To do List",
+        "x-apidog-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "To do List"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "faker": "Estudar Java"
+                  },
+                  "description": {
+                    "type": "string",
+                    "faker": "Estudar Java pela manha"
+                  },
+                  "priority": {
+                    "type": "string",
+                    "faker": "ALTA"
+                  },
+                  "startAt": {
+                    "type": "string",
+                    "faker": "2024-10-20T02:01:38.094Z"
+                  },
+                  "endAt": {
+                    "type": "string",
+                    "faker": "2024-10-20T02:01:38.094Z"
+                  }
+                },
+                "required": [
+                  "description",
+                  "title",
+                  "priority",
+                  "startAt",
+                  "endAt"
+                ],
+                "x-apidog-orders": [
+                  "title",
+                  "description",
+                  "priority",
+                  "startAt",
+                  "endAt"
+                ],
+                "x-apidog-ignore-properties": []
+              },
+              "example": {
+                "description": "Estudar Java pela manha",
+                "title": "Estudar Java",
+                "priority": "ALTA",
+                "startAt": "2023-10-20T02:01:38.094Z",
+                "endAt": "2023-10-20T02:21:39.930Z"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apidog-ignore-properties": [],
+                  "x-apidog-orders": []
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apidog": "https://apidog.com/web/project/394370/apis/api-4438286-run"
+      },
+      "get": {
+        "summary": "LIST TASKS",
+        "x-apidog-folder": "To do List",
+        "x-apidog-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "To do List"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apidog-ignore-properties": [],
+                  "x-apidog-orders": []
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apidog": "https://apidog.com/web/project/394370/apis/api-4448767-run"
+      }
+    },
+    "/tasks/9c3c247a-9f6f-4dc6-846f-b2f613458cba": {
+      "put": {
+        "summary": "UPDATE TASK",
+        "x-apidog-folder": "To do List",
+        "x-apidog-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "To do List"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "faker": "Estudar Java"
+                  },
+                  "description": {
+                    "type": "string",
+                    "faker": "Estudar Java todos os dias"
+                  },
+                  "priority": {
+                    "type": "string",
+                    "faker": "Alta"
+                  },
+                  "startAt": {
+                    "type": "string",
+                    "faker": "2023-10-20T12:30:00"
+                  },
+                  "endAt": {
+                    "type": "string",
+                    "faker": "2023-10-20T12:35:00"
+                  }
+                },
+                "x-apidog-orders": [
+                  "title",
+                  "description",
+                  "priority",
+                  "startAt",
+                  "endAt"
+                ],
+                "x-apidog-ignore-properties": []
+              },
+              "example": {
+                "description": "Estudar Java todos os dias",
+                "title": "Estudar Java",
+                "priority": "Alta",
+                "startAt": "2023-10-20T12:30:00",
+                "endAt": "2023-10-20T12:35:00"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apidog-ignore-properties": [],
+                  "x-apidog-orders": []
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apidog": "https://apidog.com/web/project/394370/apis/api-4451857-run"
+      }
+    }
+  },
+  "components": {
+    "schemas": {}
+  },
+  "servers": []
+}
